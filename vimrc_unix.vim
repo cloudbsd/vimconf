@@ -107,7 +107,11 @@ nnoremap  <silent>  <F9>      :Tlist<CR>
 "                        guifont setting for UNIX/Windows
 " ============================================================================
 if has("gui_running")
-  if has("gui_gtk2")
+  if has("mac")
+    set guifont=Menlo_Regular:h14
+  elseif has("unix")
+    " do stuff under unix platform
+  elseif has("gui_gtk2")
     if v:lang =~ "^zh_CN"
       set guifont=ĞÂËÎÌå\ 16
     else
