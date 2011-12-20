@@ -104,8 +104,10 @@ endif
 nnoremap  <silent>  <F9>      :Tlist<CR>
 
 " Hide menu and toolbar
-set guioptions-=m   " hide menu
-set guioptions-=T   " hide toolbar
+if has("gui_running")
+  set guioptions-=m   " hide menu
+  set guioptions-=T   " hide toolbar
+endif
 
 " ============================================================================
 "                        guifont setting for UNIX/Windows
