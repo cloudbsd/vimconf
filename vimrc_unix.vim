@@ -96,12 +96,9 @@ if !exists(":DiffOrig")
 endif
 
 
-if has("gui_running")
-  colorscheme darkspectrum
-else
-  colorscheme default
-endif
 nnoremap  <silent>  <F9>      :Tlist<CR>
+
+set noswapfile
 
 " Hide menu and toolbar
 if has("gui_running")
