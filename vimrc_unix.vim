@@ -96,7 +96,23 @@ if !exists(":DiffOrig")
 endif
 
 
+" ============================================================================
+"                        Added by Ritchie
+" ============================================================================
+
 nnoremap  <silent>  <F9>      :Tlist<CR>
+
+" Set NERDTree
+nnoremap  <Leader>nt  :NERDTree<CR>
+nnoremap  <Leader>nc  :NERDTreeClose<CR>
+
+
+" Set FuzzyFinder
+"nmap <script> <silent> <unique> <Leader>ff :FufFile<CR>
+"nmap <script> <silent> <unique> <Leader>fb :FufBuffer<CR>
+nnoremap  <Leader>ff  :FufFile<CR>
+nnoremap  <Leader>fb  :FufBuffer<CR>
+
 
 set noswapfile
 
