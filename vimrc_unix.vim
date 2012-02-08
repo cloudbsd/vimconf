@@ -100,18 +100,21 @@ endif
 "                        Added by Ritchie
 " ============================================================================
 
-nnoremap  <silent>  <F9>      :Tlist<CR>
+" Set Taglist
+nnoremap  <Leader>lt  :TlistToggle<CR>
 
 " Set NERDTree
-nnoremap  <Leader>nt  :NERDTree<CR>
-nnoremap  <Leader>nc  :NERDTreeClose<CR>
-
+nnoremap  <Leader>to  :NERDTree<CR>
+nnoremap  <Leader>tc  :NERDTreeClose<CR>
+nnoremap  <Leader>tt  :NERDTreeToggle<CR>
+nnoremap  <Leader>tf  :NERDTreeFind<CR>
 
 " Set FuzzyFinder
 "nmap <script> <silent> <unique> <Leader>ff :FufFile<CR>
 "nmap <script> <silent> <unique> <Leader>fb :FufBuffer<CR>
 nnoremap  <Leader>ff  :FufFile<CR>
 nnoremap  <Leader>fb  :FufBuffer<CR>
+nnoremap  <Leader>fd  :FufDir<CR>
 
 
 set noswapfile
