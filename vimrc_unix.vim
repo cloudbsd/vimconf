@@ -130,7 +130,7 @@ endif
 " ============================================================================
 if has("gui_running")
   if has("mac")
-    set guifont=Menlo_Regular:h14
+    set guifont=Menlo_Regular:h13
   elseif has("unix")
     " do stuff under unix platform
   elseif has("gui_gtk2")
